@@ -151,6 +151,8 @@ function uploadImage(req, res) {
                     }
                 }
             })
+        } else {
+            res.status(200).send({ message: 'Extension de la imagen no valida' })
         }
     }
     else {
